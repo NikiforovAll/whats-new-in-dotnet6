@@ -1,0 +1,29 @@
+{
+    "name": ".NET 6 devcontainer",
+    "image": "nikiforovall/devcontainers-dotnet:latest",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "dotfiles.installCommand": "",
+        "remote.containers.dotfiles.repository": "https://github.com/NikiforovAll/dotfiles.git",
+        "remote.containers.dotfiles.installCommand": "~/dotfiles/src/dev-container/boot/install.sh",
+        "remote.containers.dotfiles.targetPath": "~/dotfiles",
+    },
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        // dotnet
+        "ms-dotnettools.csharp",
+        "formulahendry.dotnet-test-explorer",
+        "tintoy.msbuild-project-tools",
+        "nikiforovall.surround-with-csharp",
+        //git
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "codezombiech.gitignore",
+        // MISC
+        "k--kato.docomment",
+        "yzhang.markdown-all-in-one",
+        "dotjoshjohnson.xml",
+        "editorconfig.editorconfig",
+        "naumovs.trailing-semicolon",
+    ]
+}

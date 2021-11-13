@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Using Include="System.Int32" Static="True" />
     <Using Include="System.Console" Static="True" />
   </ItemGroup>
 

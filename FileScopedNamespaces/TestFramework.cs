@@ -6,7 +6,9 @@ namespace FileScopedNamespaces
     {
         public static void Print(bool result, [CallerArgumentExpression("result")] string? expr = default)
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             WriteLine($"({expr}) is {result}");
+            ResetColor();
         }
 
         public static void Assert(bool condition, [CallerArgumentExpression("condition")]

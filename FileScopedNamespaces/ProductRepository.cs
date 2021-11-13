@@ -5,6 +5,7 @@ public class ProductRepository : IProductRepository
     public Task<Product> GetProductAsync(int id) =>
         Task.FromResult<Product>(new(1, "Name", ProductWarranty.OneYear));
 }
+
 public interface IProductRepository
 {
     Task<Product> GetProductAsync(int id);

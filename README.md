@@ -4,4 +4,9 @@ All you need to do is to open repository in VSCode and run 'Remote-Containers: O
 
 ## Getting started
 
-Please see related blog post for more information.
+Please see related blog post for additional information.
+
+## Agenda
+
+1. [Global Usings](./GlobalUsings/Program.cs)
+1. [File-scoped namespaces](./FileScopedNamespaces/Program.cs)

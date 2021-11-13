@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using Comparers;
+using static System.Console;
 
 var queue = new PriorityQueue<Job, int>(ReverseComparer<int>.Default);
 
@@ -20,23 +21,9 @@ while (await timer.WaitForNextTickAsync())
 
 public record struct Job(string Name, int Priority);
 
-public sealed class ReverseComparer<T> : IComparer<T>
-{
-    public static readonly ReverseComparer<T> Default = new(Comparer<T>.Default);
-
-    public static ReverseComparer<T> Reverse(IComparer<T> comparer) =>
-        new ReverseComparer<T>(comparer);
-
-    private readonly IComparer<T> comparer = Default;
-
-    private ReverseComparer(IComparer<T> comparer) =>
-        this.comparer = comparer;
-
-    public int Compare(T? x, T? y) => comparer.Compare(y, x);
-}
-
 public static class ProduceNumericEnumeratorExtensions
 {
+    // C# 9 feature
     public static IEnumerator<int> GetEnumerator(this int number)
     {
         for (var i = 0; i < number; i++)

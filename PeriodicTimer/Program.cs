@@ -5,7 +5,7 @@ using var timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
 
 while (await timer.WaitForNextTickAsync())
 {
-    LogEntry? l = Random.Shared.Next(128) is int r && IsPow2(r)
+    LogEntry? l = Random.Shared.Next(128) is var r && IsPow2(r)
         ? default
         : new(r);
 

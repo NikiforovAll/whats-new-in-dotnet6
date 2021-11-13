@@ -9,7 +9,15 @@ Please see related blog post for additional information.
 ## Agenda
 
 1. [Global Usings](./GlobalUsings/Program.cs)
-1. [File-scoped namespaces](./FileScopedNamespaces/Program.cs)
+2. [File-scoped namespaces](./FileScopedNamespaces/Program.cs)
+3. [Record Structs](./RecordStructs/Program.cs)
+4. [Minimal APIs](./MinimalAPI/Program.cs)
+5. [LINQ Improvements](./LINQ/Program.cs)
+6. [Parallel.ForEachAsync](./ParallelForEachAsync/Program.cs)
+7. [PeriodicTimer](./PeriodicTimer/Program.cs)
+8. [PriorityQueue](./PriorityQueue/Program.cs)
+9. [DateOnly and TimeOnly](./DateOnly/Program.cs)
+10. [System.Text.Json Improvements](./SystemTextJson/Program.cs)
 
 ## Reference
 

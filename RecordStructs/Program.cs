@@ -1,27 +1,26 @@
-﻿
-public record class Point(double X, double Y, double Z);
+﻿using Points;
 
-// public record class Point
-// {
-//     public double X {  get; init; }
-//     public double Y {  get; init; }
-//     public double Z {  get; init; }
-// }
+// [new] Record struct
+var p1 = new Point2(1, 0, 0);
+var p2 = p1 with { X = 2 };
 
-public readonly record struct Point2(double X, double Y, double Z);
+double p2x = 0;
+(p2x, var y, var z) = p2;
 
-// public record struct Point2
-// {
-//     public double X {  get; init; }
-//     public double Y {  get; init; }
-//     public double Z {  get; init; }
-// }
+Write(p1);
+Write(p2);
+Write(p2x);
 
-public record struct Point3(double X, double Y, double Z);
+// [new] Expression 'with' in structs​
+var p3 = new Point4 { X = 3 };
+var p4 = p3 with { X = 4 };
 
-// public record struct Point3
-// {
-//     public double X { get; set; }
-//     public double Y { get; set; }
-//     public double Z { get; set; }
-// }
+Write(p3);
+Write(p4);
+
+// [new] Expression 'with' in anonymous types​
+var p5 = new { X = 5, Y = 0, Z = 0 };
+var p6 = p5 with { X = 6 };
+
+Write(p5);
+Write(p6);

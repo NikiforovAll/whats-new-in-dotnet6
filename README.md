@@ -10,3 +10,8 @@ Please see related blog post for additional information.
 
 1. [Global Usings](./GlobalUsings/Program.cs)
 1. [File-scoped namespaces](./FileScopedNamespaces/Program.cs)
+
+## Reference
+
+* <https://www.theurlist.com/whats-new-in-dotnet6-and-csharp10>
+* <https://www.theurlist.com/minimalapi-in-dotnet6>
